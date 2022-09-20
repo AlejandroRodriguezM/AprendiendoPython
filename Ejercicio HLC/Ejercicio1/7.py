@@ -10,5 +10,5 @@ panManioVendido = int(input("¿Cuantas barras de pan que no son del dia se han v
 
 precioTotalManio = precioPanManio * panManioVendido
 
-print("El precio habitual de una barra de pan es: ",precioPanDia,"€, el pan que no es del dia se le aplica es del 60%"
-                                                                 ", el coste final es: ",precioTotalManio,"€")
+print("El precio habitual de una barra de pan es: ", precioPanDia, "€, el pan que no es del dia se le aplica es del 60%"
+                                                                   ", el coste final es: ", precioTotalManio, "€")
