@@ -8,9 +8,9 @@ nota = int(input("¿Que nota has sacado?: "))
 print("Hola,",nombre, "has sacado un",nota,":")
 if nota < 5:
     print("Estas suspenso.")
-elif nota > 5 and nota < 7:
+elif 5 < nota < 7:
     print("Estas aprobado")
-elif nota > 6 and nota < 9:
+elif 6 < nota < 9:
     print("Tienes un notable")
-elif nota > 8 and nota < 11:
+elif 8 < nota < 11:
     print("Tienes un sobresaliente")
