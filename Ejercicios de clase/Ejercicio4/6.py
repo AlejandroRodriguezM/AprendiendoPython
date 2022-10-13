@@ -1,6 +1,6 @@
 # Escribe una función que devuelva una lista que será el resultado de aplicar la
 # función que tiene como parámetro a la lista que también tiene como parámetro.
-# Por Alejandro Rodriguez Mena.
+# Por Alejandro Rodriguez Mena..
 
 def aplicarFuncion(listaNumeros, funcion):
     try:
