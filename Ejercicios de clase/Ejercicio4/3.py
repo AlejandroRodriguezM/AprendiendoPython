@@ -9,10 +9,10 @@ def contarPalabras(palabra, caracter):
             for i in palabra:
                 if i == caracter:
                     contadorCaracter += 1
-            print("Existe ", contadorCaracter, "en la palabra", palabra)
+                    print("Existe ", contadorCaracter, "en la palabra", palabra)
         else:
-            raise ValueError("ERROR. La palabra introducido esta vacia")
-    except ValueError as e:
+            raise Exception("ERROR. La palabra introducido esta vacia")
+    except Exception as e:
         print(e)
         raise palabras()
 
@@ -25,10 +25,10 @@ def palabras():
             if len(caracter) == 1:
                 contarPalabras(palabra, caracter)
             else:
-                raise ValueError("ERROR. Solamente puedes introducir un caracter")
+                raise Exception("ERROR. Solamente puedes introducir un caracter")
         else:
-            raise ValueError("ERROR. La palabra introducido esta vacia")
-    except ValueError as e:
+            raise Exception("ERROR. La palabra introducido esta vacia")
+    except Exception as e:
         print(e)
         raise palabras()
 
