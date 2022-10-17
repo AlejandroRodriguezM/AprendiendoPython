@@ -9,7 +9,7 @@ def contarPalabras(palabra, caracter):
             for i in palabra:
                 if i == caracter:
                     contadorCaracter += 1
-                    print("Existe ", contadorCaracter, "en la palabra", palabra)
+            print("Existe ", contadorCaracter, "en la palabra", palabra)
         else:
             raise ValueError("ERROR. La palabra introducido esta vacia")
     except ValueError as e:
