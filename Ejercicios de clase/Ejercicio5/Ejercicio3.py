@@ -1,5 +1,6 @@
 # Escribir un programa para el control de una agenda telefónica con los nombres y
-# teléfonos de los clientes de una tienda de electrónica. El programa tendrá que incorporar funciones
+# teléfonos de los clientes de una tienda de electrónica.
+# El programa tendrá que incorporar funciones
 # para crear el fichero con la agenda si no existe, para hacer una consulta sobre el teléfono de un
 # cliente, añadir el teléfono de un nuevo cliente y borrar el teléfono de un cliente. La agenda
 # telefónica debe estar guardada en el fichero de texto agenda.txt donde el nombre del cliente y su
@@ -7,7 +8,6 @@
 # Por Alejandro Rodriguez Mena
 
 import os
-
 
 # Función para crear la agenda si no existe
 def crear_agenda():
