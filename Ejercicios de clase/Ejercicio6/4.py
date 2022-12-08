@@ -4,6 +4,7 @@
 # archivo index.html donde se muestre una cabecera que ponga IMÁGENES, y a continuación cada
 # una de las imágenes con un título que ponga IMAGEN X, donde la x será el número de la imagen
 
+#Funcion que lee el contenido del fichero y lo guarda en una lista
 def leerFichero():
     try:
         fichero = open("fichero.txt", "r")
@@ -11,12 +12,13 @@ def leerFichero():
         for linea in fichero:
             lista.append(linea)
         fichero.close()
+        print(lista)
         return lista
     except FileNotFoundError:
         print("Error. El fichero no existe")
         raise SystemExit
 
-
+# Funcion que genera el archivo HTML
 def generarHTML(lista):
     fichero = open("index.html", "w")
     fichero.write("<html><head><title>IMÁGENES</title></head><body>")
@@ -25,7 +27,8 @@ def generarHTML(lista):
     fichero.write("</body></html>")
     fichero.close()
 
-
+# Funcion principal
 def main():
     generarHTML(leerFichero())
 
+main()

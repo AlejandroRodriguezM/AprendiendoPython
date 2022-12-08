@@ -10,13 +10,15 @@ def multiplo(numero):
 
 
 def comprobarNumero():
-    while True:
+    try:
         numero = int(input("Dime un numero: "))
         if multiplo(numero):
             print("El numero", numero, "es multiplo de 3")
-            break
         else:
             print("El numero ", numero, "no es multiple de 3 \n")
+    except ValueError:
+        print("ERROR. Debes de añadir un numero")
+        raise comprobarNumero()
 
 
 comprobarNumero()

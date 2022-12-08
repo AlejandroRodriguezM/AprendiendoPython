@@ -14,8 +14,8 @@ def traducir(frase, diccionario):
                 else:
                     print(i, end=" ")
         else:
-            raise ValueError("ERROR. La frase introducida esta vacia")
-    except ValueError as e:
+            raise Exception("ERROR. La frase introducida esta vacia")
+    except Exception as e:
         print(e)
         raise traducir()
 
@@ -30,12 +30,12 @@ def palabras():
                 if len(palabraIngles) != 0:
                     diccionario[palabra] = palabraIngles
                 else:
-                    raise ValueError("ERROR. La palabra introducida esta vacia")
+                    raise Exception("ERROR. La palabra introducida esta vacia")
             else:
                 break
         frase = input("Dime una frase: ")
         traducir(frase, diccionario)
-    except ValueError as e:
+    except Exception as e:
         print(e)
         raise palabras()
 

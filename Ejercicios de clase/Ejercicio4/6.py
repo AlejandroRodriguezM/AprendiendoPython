@@ -11,8 +11,8 @@ def aplicarFuncion(listaNumeros, funcion):
             print("La lista original es:",listaNumeros)
             print("Aplicada la funcion es:",listaResultado)
         else:
-            raise ValueError("ERROR. La lista introducida esta vacia")
-    except ValueError as e:
+            raise Exception("ERROR. La lista introducida esta vacia")
+    except Exception as e:
         print(e)
         raise aplicarFuncion()
 
@@ -25,8 +25,8 @@ def lista():
             listaNumeros.append(numero)
         sumaLista()
         aplicarFuncion(listaNumeros, sumaLista())
-    except ValueError as e:
-        print(e)
+    except ValueError:
+        print("ERROR. Debes de introducir un numero entero")
         raise lista()
 
 
