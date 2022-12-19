@@ -9,7 +9,7 @@
 # negativa, no se hará nada.
 # • retirar(cantidad): se retira una cantidad a la cuenta. La cuenta puede estar en números rojos.
 
-# importar clase persona
+# importar clase persona.
 from Persona import Persona
 
 class Cuenta:
